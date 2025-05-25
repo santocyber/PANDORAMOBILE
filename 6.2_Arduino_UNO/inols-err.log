@@ -1,0 +1,645 @@
+
+
+
+
+
+
+
+Started logging.
+16:41:50.383329 Language server launched with arguments:
+16:41:50.383329   arg[0] = d:\Program Files\Arduino IDE\resources\app\node_modules\arduino-ide-extension\build\arduino-language-server.exe
+16:41:50.383329   arg[1] = -clangd
+16:41:50.383329   arg[2] = d:\Program Files\Arduino IDE\resources\app\node_modules\arduino-ide-extension\build\clangd.exe
+16:41:50.384326   arg[3] = -cli-daemon-addr
+16:41:50.384326   arg[4] = localhost:54181
+16:41:50.384326   arg[5] = -cli-daemon-instance
+16:41:50.384326   arg[6] = 1
+16:41:50.384326   arg[7] = -fqbn
+16:41:50.384326   arg[8] = arduino:avr:uno
+16:41:50.384326   arg[9] = -skip-libraries-discovery-on-rebuild
+16:41:50.384326   arg[10] = -board-name
+16:41:50.384326   arg[11] = "Arduino Uno"
+16:41:50.384326   arg[12] = -no-real-time-diagnostics
+16:41:50.384326   arg[13] = -log
+16:41:50.384326   arg[14] = -logpath
+16:41:50.384326   arg[15] = g:\11.ZhiYi\5.Tutorial\1.tutorial\ZYC0076拍照麦克轮WiFi小车\ZYC0076\4_Arduino_Code\6.2_Arduino_UNO
+16:41:50.395750 listen tcp 127.0.0.1:6060: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted.
+16:41:50.493109 logging to g:\11.ZhiYi\5.Tutorial\1.tutorial\ZYC0076拍照麦克轮WiFi小车\ZYC0076\4_Arduino_Code\6.2_Arduino_UNO\inols.log
+16:41:50.499573 [97mLS: : Initial board configuration: arduino:avr:uno[0m
+16:41:50.499573 [97mLS: : Language server build path: C:\Users\Administrator\AppData\Local\Temp\arduino-language-server1226066953[0m
+16:41:50.499573 [97mLS: : Language server build sketch root: C:\Users\Administrator\AppData\Local\Temp\arduino-language-server1226066953\sketch[0m
+16:41:50.499573 [97mLS: : Language server FULL build path: C:\Users\Administrator\AppData\Local\Temp\arduino-language-server1052332919[0m
+16:41:50.499962 IN Elapsed: 0s
+16:41:50.499962 [92mIDE --> LS REQU initialize 0[0m
+16:41:50.501019 [92m                initialize 0: [93mwrite-locked[0m[0m
+16:41:50.501600 [92m                initialize 0: [93mwrite-unlocked[0m[0m
+16:41:50.502132 [96mINIT --- : initializing workbench: file:///g%3A/11.ZhiYi/5.Tutorial/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/4_Arduino_Code/6.2_Arduino_UNO[0m
+16:41:50.502132 [96mINIT --- : [93mread-locked[0m[0m
+16:41:50.502132 [96mINIT --- : [93mread-unlocked[0m[0m
+16:41:50.502132 [92m                initialize 0: initialization parameters: {"capabilities":{"textDocumentSync":{"openClose":true,"change":2,"save":{"includeText":true}},"completionProvider":{"triggerCharacters":[".","\u003c","\u003e",":","\"","/"],"allCommitCharacters":[" ","\t","(",")","[","]","{","}","\u003c","\u003e",":",";",",","+","-","/","*","%","^","\u0026","#","?",".","=","\"","'","|"],"completionItem":{}},"hoverProvider":{},"signatureHelpProvider":{"triggerCharacters":["(",","]},"definitionProvider":{},"documentHighlightProvider":{},"documentSymbolProvider":{},"codeActionProvider":{"codeActionKinds":["quickfix","refactor","info"]},"documentFormattingProvider":{},"documentRangeFormattingProvider":{},"documentOnTypeFormattingProvider":{"firstTriggerCharacter":"\n"},"renameProvider":{},"executeCommandProvider":{"commands":["clangd.applyFix","clangd.applyTweak"]},"workspaceSymbolProvider":{}},"serverInfo":{"name":"arduino-language-server","version":"0.7.1"}}[0m
+16:41:50.502132 [32mIDE <-- LS RESP initialize 0[0m
+16:41:50.502704 OUT Elapsed: 571.7µs
+16:41:50.507002 IN Elapsed: 4.2985ms
+16:41:50.507002 [92mIDE --> LS NOTIF initialized[0m
+16:41:50.507002 [92m                 initialized: Notification is not propagated to clangd[0m
+16:41:50.507002 IN Elapsed: 0s
+16:41:50.507514 [92mIDE --> LS NOTIF textDocument/didOpen[0m
+16:41:50.507514 [92m                 textDocument/didOpen: [93mwrite-locked[0m[0m
+16:41:50.507514 [92m                 textDocument/didOpen: (throttled: waiting for clangd)[0m
+16:41:50.507514 [92m                 textDocument/didOpen: [93munlocked (waiting clangd)[0m[0m
+16:41:50.812678 [96mINIT --- : Running build with: {
+  "instance": {
+    "id": 1
+  },
+  "fqbn": "arduino:avr:uno",
+  "sketch_path": "G:\\11.ZhiYi\\5.Tutorial\\1.tutorial\\ZYC0076拍照麦克轮WiFi小车\\ZYC0076\\4_Arduino_Code\\6.2_Arduino_UNO",
+  "build_path": "C:\\Users\\Administrator\\AppData\\Local\\Temp\\arduino-language-server1052332919",
+  "verbose": true,
+  "create_compilation_database_only": true
+}[0m
+16:41:54.836320 [96mINIT --- : Compile successful![0m
+16:41:54.839822 [96mINIT --- : Updated 'libraries.cache'. Copied: C:\Users\Administrator\AppData\Local\Temp\arduino-language-server1052332919\libraries.cache to C:\Users\Administrator\AppData\Local\Temp\arduino-language-server1226066953\libraries.cache[0m
+16:41:54.839870 [96mINIT --- : [93mread-locked[0m[0m
+16:41:54.839870 [96mINIT --- : [93mread-unlocked[0m[0m
+16:41:55.144714 [96mINIT --- : Running build with: {
+  "instance": {
+    "id": 1
+  },
+  "fqbn": "arduino:avr:uno",
+  "sketch_path": "G:\\11.ZhiYi\\5.Tutorial\\1.tutorial\\ZYC0076拍照麦克轮WiFi小车\\ZYC0076\\4_Arduino_Code\\6.2_Arduino_UNO",
+  "build_path": "C:\\Users\\Administrator\\AppData\\Local\\Temp\\arduino-language-server1226066953",
+  "verbose": true,
+  "create_compilation_database_only": true,
+  "skip_libraries_discovery": true
+}[0m
+16:41:55.502590 [96mINIT --- : Compile successful![0m
+16:41:55.857886 [96mINIT --- : Arduino Data Dir -> c:\Users\Administrator\AppData\Local\Arduino15[0m
+16:41:55.859977 [96mINIT --- :     Starting clangd: d:\Program Files\Arduino IDE\resources\app\node_modules\arduino-ide-extension\build\clangd.exe -log=verbose --compile-commands-dir=C:\Users\Administrator\AppData\Local\Temp\arduino-language-server1226066953 -query-driver=C:\Users\Administrator\AppData\Local\Arduino15\packages\**[0m
+16:41:55.870657 logging to g:\11.ZhiYi\5.Tutorial\1.tutorial\ZYC0076拍照麦克轮WiFi小车\ZYC0076\4_Arduino_Code\6.2_Arduino_UNO\inols-clangd.log
+16:41:55.871197 logging to g:\11.ZhiYi\5.Tutorial\1.tutorial\ZYC0076拍照麦克轮WiFi小车\ZYC0076\4_Arduino_Code\6.2_Arduino_UNO\inols-clangd-err.log
+16:41:55.871700 [91mIDE     LS --> Clangd REQU initialize 1[0m
+16:41:55.872817 OUT Elapsed: 810.8µs
+16:41:55.908443 IN Elapsed: 36.4368ms
+16:41:55.908727 [31mIDE     LS <-- Clangd RESP initialize 1[0m
+16:41:55.908727 [96mINIT --- : clangd successfully started: {"capabilities":{"textDocumentSync":{"openClose":true,"change":2,"save":{}},"completionProvider":{"triggerCharacters":[".","\u003c","\u003e",":","\"","/","*"],"allCommitCharacters":[" ","\t","(",")","[","]","{","}","\u003c","\u003e",":",";",",","+","-","/","*","%","^","\u0026","#","?",".","=","\"","'","|"]},"hoverProvider":{},"signatureHelpProvider":{"triggerCharacters":["(",")","{","}","\u003c","\u003e",","]},"declarationProvider":{},"definitionProvider":{},"typeDefinitionProvider":{},"implementationProvider":{},"referencesProvider":{},"documentHighlightProvider":{},"documentSymbolProvider":{},"codeActionProvider":{"codeActionKinds":["quickfix","refactor","info"]},"documentLinkProvider":{},"documentFormattingProvider":{},"documentRangeFormattingProvider":{},"documentOnTypeFormattingProvider":{"firstTriggerCharacter":"\n"},"renameProvider":{"prepareProvider":true},"executeCommandProvider":{"commands":["clangd.applyFix","clangd.applyTweak"]},"selectionRangeProvider":{},"callHierarchyProvider":{},"semanticTokensProvider":{"legend":{"tokenTypes":["variable","variable","parameter","function","method","function","property","variable","class","interface","enum","enumMember","type","type","unknown","namespace","typeParameter","concept","type","macro","comment"],"tokenModifiers":["declaration","deprecated","deduced","readonly","static","abstract","virtual","dependentName","defaultLibrary","usedAsMutableReference","functionScope","classScope","fileScope","globalScope"]},"range":false,"full":{"delta":true}},"workspaceSymbolProvider":{}},"serverInfo":{"name":"clangd","version":"clangd version 14.0.0 windows x86_64-pc-windows-msvc"}}[0m
+16:41:55.908727 [91mIDE     LS --> Clangd NOTIF initialized[0m
+16:41:55.908727 OUT Elapsed: 0s
+16:41:55.908727 [96mINIT --- : Done initializing workbench[0m
+16:41:55.909230 [92m                 textDocument/didOpen: [93mlocked (waiting clangd)[0m[0m
+16:41:55.910362 [92m                 textDocument/didOpen: URI: file:///g%3A/11.ZhiYi/5.Tutorial/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/4_Arduino_Code/6.2_Arduino_UNO/6.2_Arduino_UNO.ino -> file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server1226066953/sketch/6.2_Arduino_UNO.ino.cpp[0m
+16:41:55.913668 [92m                 textDocument/didOpen: Increasing .ino tracked files count to 1[0m
+16:41:55.915221 [91mIDE     LS --> Clangd NOTIF textDocument/didOpen[0m
+16:41:55.915732 OUT Elapsed: 0s
+16:41:55.915732 [92m                 textDocument/didOpen: [93mwrite-unlocked[0m[0m
+16:41:55.915732 IN Elapsed: 0s
+16:41:55.915732 [92mIDE --> LS REQU textDocument/codeAction 1[0m
+16:41:55.915732 [92m                textDocument/codeAction 1: [93mread-locked[0m[0m
+16:41:55.916235 [92m                textDocument/codeAction 1: --> codeAction(file:///g%3A/11.ZhiYi/5.Tutorial/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/4_Arduino_Code/6.2_Arduino_UNO/6.2_Arduino_UNO.ino:30:67)[0m
+16:41:55.917257 [92m                textDocument/codeAction 1: URI: file:///g%3A/11.ZhiYi/5.Tutorial/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/4_Arduino_Code/6.2_Arduino_UNO/6.2_Arduino_UNO.ino -> file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server1226066953/sketch/6.2_Arduino_UNO.ino.cpp[0m
+16:41:55.920107 IN Elapsed: 11.3803ms
+16:41:55.920611 [91mIDE     LS <-- Clangd NOTIF textDocument/publishDiagnostics[0m
+16:41:55.920678 [91m                            textDocument/publishDiagnostics: Ignored by configuration[0m
+16:41:55.921224 [92m                textDocument/codeAction 1:     --> codeAction(file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server1226066953/sketch/6.2_Arduino_UNO.ino.cpp:30:67)[0m
+16:41:55.921224 [91mIDE     LS --> Clangd REQU textDocument/codeAction 2[0m
+16:41:55.921224 OUT Elapsed: 0s
+16:41:55.923674 IN Elapsed: 2.9961ms
+16:41:55.923674 [91mIDE     LS <-- Clangd REQU window/workDoneProgress/create 0[0m
+16:41:55.923674 [31mIDE     LS --> Clangd RESP window/workDoneProgress/create 0[0m
+16:41:55.923674 [92mIDE <-- LS REQU window/workDoneProgress/create 1[0m
+16:41:55.924176 OUT Elapsed: 502.4µs
+16:41:55.924242 OUT Elapsed: 568.4µs
+16:41:55.924242 IN Elapsed: 0s
+16:41:55.924242 [91mIDE     LS <-- Clangd NOTIF $/progress[0m
+16:41:55.924242 [91m                            $/progress: backgroundIndexProgress BEGIN indexing, 0.0%[0m
+16:41:55.924242 IN Elapsed: 0s
+16:41:55.924242 [91mIDE     LS <-- Clangd NOTIF $/progress[0m
+16:41:55.924242 [91m                            $/progress: backgroundIndexProgress REPORT, 0/1, 0.0%[0m
+16:41:55.930049 IN Elapsed: 5.8069ms
+16:41:55.930049 [91mIDE     LS <-- Clangd NOTIF $/progress[0m
+16:41:55.930049 [91m                            $/progress: backgroundIndexProgress REPORT, 0/27, 0.0%[0m
+16:41:55.930049 IN Elapsed: 0s
+16:41:55.930049 [91mIDE     LS <-- Clangd NOTIF $/progress[0m
+16:41:55.930049 [91m                            $/progress: backgroundIndexProgress REPORT, 0/27, 0.0%[0m
+16:41:55.930049 IN Elapsed: 0s
+16:41:55.930049 [91mIDE     LS <-- Clangd NOTIF $/progress[0m
+16:41:55.930049 [91m                            $/progress: backgroundIndexProgress REPORT, 0/27, 0.0%[0m
+16:41:55.930049 IN Elapsed: 0s
+16:41:55.930552 [91mIDE     LS <-- Clangd NOTIF $/progress[0m
+16:41:55.930559 [91m                            $/progress: backgroundIndexProgress REPORT, 0/27, 0.0%[0m
+16:41:55.930559 IN Elapsed: 0s
+16:41:55.930559 [91mIDE     LS <-- Clangd NOTIF $/progress[0m
+16:41:55.930559 [91m                            $/progress: backgroundIndexProgress REPORT, 0/27, 0.0%[0m
+16:41:55.930559 IN Elapsed: 0s
+16:41:55.930559 [91mIDE     LS <-- Clangd NOTIF $/progress[0m
+16:41:55.930559 [91m                            $/progress: backgroundIndexProgress REPORT, 1/27, 3.0%[0m
+16:41:55.930559 IN Elapsed: 0s
+16:41:55.930559 [91mIDE     LS <-- Clangd NOTIF $/progress[0m
+16:41:55.930559 [91m                            $/progress: backgroundIndexProgress REPORT, 1/27, 3.0%[0m
+16:41:55.930559 IN Elapsed: 0s
+16:41:55.930559 [91mIDE     LS <-- Clangd NOTIF $/progress[0m
+16:41:55.930559 [91m                            $/progress: backgroundIndexProgress REPORT, 1/27, 3.0%[0m
+16:41:56.226744 IN Elapsed: 296.0948ms
+16:41:56.226744 [91mIDE     LS <-- Clangd NOTIF textDocument/publishDiagnostics[0m
+16:41:56.226744 [91m                            textDocument/publishDiagnostics: Ignored by configuration[0m
+16:41:56.227805 IN Elapsed: 1.0608ms
+16:41:56.228331 [31mIDE     LS <-- Clangd RESP textDocument/codeAction 2[0m
+16:41:56.228331 [92m                textDocument/codeAction 1: [93mread-unlocked[0m[0m
+16:41:56.228331 [32mIDE <-- LS RESP textDocument/codeAction 1[0m
+16:41:56.228331 OUT Elapsed: 0s
+16:41:56.228837 IN Elapsed: 0s
+16:41:56.229079 [92mIDE --> LS REQU textDocument/documentSymbol 2[0m
+16:41:56.229079 [92m                textDocument/documentSymbol 2: [93mread-locked[0m[0m
+16:41:56.232913 [92m                textDocument/documentSymbol 2: URI: file:///g%3A/11.ZhiYi/5.Tutorial/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/4_Arduino_Code/6.2_Arduino_UNO/6.2_Arduino_UNO.ino -> file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server1226066953/sketch/6.2_Arduino_UNO.ino.cpp[0m
+16:41:56.232913 [91mIDE     LS --> Clangd REQU textDocument/documentSymbol 3[0m
+16:41:56.233440 OUT Elapsed: 0s
+16:41:56.240230 IN Elapsed: 11.8986ms
+16:41:56.240857 [31mIDE     LS <-- Clangd RESP textDocument/documentSymbol 3[0m
+16:41:56.241906 [92m                textDocument/documentSymbol 2: file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server1226066953/sketch/6.2_Arduino_UNO.ino.cpp (52 document symbols)[0m
+16:41:56.241906 [92m                textDocument/documentSymbol 2:   > convert SymbolKind:Variable 22:0-22:16[0m
+16:41:56.245836 [92m                textDocument/documentSymbol 2: Range: file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server1226066953/sketch/6.2_Arduino_UNO.ino.cpp:22:0-22:16 -> file:///g%3A/11.ZhiYi/5.Tutorial/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/4_Arduino_Code/6.2_Arduino_UNO/6.2_Arduino_UNO.ino:20:0-20:16 (.ino)[0m
+16:41:56.249461 [92m                textDocument/documentSymbol 2: Range: file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server1226066953/sketch/6.2_Arduino_UNO.ino.cpp:22:6-22:16 -> file:///g%3A/11.ZhiYi/5.Tutorial/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/4_Arduino_Code/6.2_Arduino_UNO/6.2_Arduino_UNO.ino:20:6-20:16 (.ino)[0m
+16:41:56.249979 [92m                textDocument/documentSymbol 2: file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server1226066953/sketch/6.2_Arduino_UNO.ino.cpp (0 document symbols)[0m
+16:41:56.249979 [92m                textDocument/documentSymbol 2:   > convert SymbolKind:Variable 24:0-24:28[0m
+16:41:56.253880 [92m                textDocument/documentSymbol 2: Range: file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server1226066953/sketch/6.2_Arduino_UNO.ino.cpp:24:0-24:28 -> file:///g%3A/11.ZhiYi/5.Tutorial/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/4_Arduino_Code/6.2_Arduino_UNO/6.2_Arduino_UNO.ino:22:0-22:28 (.ino)[0m
+16:41:56.257602 [92m                textDocument/documentSymbol 2: Range: file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server1226066953/sketch/6.2_Arduino_UNO.ino.cpp:24:10-24:17 -> file:///g%3A/11.ZhiYi/5.Tutorial/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/4_Arduino_Code/6.2_Arduino_UNO/6.2_Arduino_UNO.ino:22:10-22:17 (.ino)[0m
+16:41:56.257602 [92m                textDocument/documentSymbol 2: file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server1226066953/sketch/6.2_Arduino_UNO.ino.cpp (0 document symbols)[0m
+16:41:56.258125 [92m                textDocument/documentSymbol 2:   > convert SymbolKind:Variable 25:0-25:29[0m
+16:41:56.263069 [92m                textDocument/documentSymbol 2: Range: file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server1226066953/sketch/6.2_Arduino_UNO.ino.cpp:25:0-25:29 -> file:///g%3A/11.ZhiYi/5.Tutorial/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/4_Arduino_Code/6.2_Arduino_UNO/6.2_Arduino_UNO.ino:23:0-23:29 (.ino)[0m
+16:41:56.265392 [92m                textDocument/documentSymbol 2: Range: file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server1226066953/sketch/6.2_Arduino_UNO.ino.cpp:25:10-25:18 -> file:///g%3A/11.ZhiYi/5.Tutorial/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/4_Arduino_Code/6.2_Arduino_UNO/6.2_Arduino_UNO.ino:23:10-23:18 (.ino)[0m
+16:41:56.265392 [92m                textDocument/documentSymbol 2: file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server1226066953/sketch/6.2_Arduino_UNO.ino.cpp (0 document symbols)[0m
+16:41:56.265392 [92m                textDocument/documentSymbol 2:   > convert SymbolKind:Variable 26:0-26:29[0m
+16:41:56.266984 [92m                textDocument/documentSymbol 2: Range: file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server1226066953/sketch/6.2_Arduino_UNO.ino.cpp:26:0-26:29 -> file:///g%3A/11.ZhiYi/5.Tutorial/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/4_Arduino_Code/6.2_Arduino_UNO/6.2_Arduino_UNO.ino:24:0-24:29 (.ino)[0m
+16:41:56.268571 [92m                textDocument/documentSymbol 2: Range: file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server1226066953/sketch/6.2_Arduino_UNO.ino.cpp:26:10-26:19 -> file:///g%3A/11.ZhiYi/5.Tutorial/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/4_Arduino_Code/6.2_Arduino_UNO/6.2_Arduino_UNO.ino:24:10-24:19 (.ino)[0m
+16:41:56.268571 [92m                textDocument/documentSymbol 2: file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server1226066953/sketch/6.2_Arduino_UNO.ino.cpp (0 document symbols)[0m
+16:41:56.268571 [92m                textDocument/documentSymbol 2:   > convert SymbolKind:Variable 27:0-27:29[0m
+16:41:56.270072 [92m                textDocument/documentSymbol 2: Range: file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server1226066953/sketch/6.2_Arduino_UNO.ino.cpp:27:0-27:29 -> file:///g%3A/11.ZhiYi/5.Tutorial/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/4_Arduino_Code/6.2_Arduino_UNO/6.2_Arduino_UNO.ino:25:0-25:29 (.ino)[0m
+16:41:56.271070 [92m                textDocument/documentSymbol 2: Range: file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server1226066953/sketch/6.2_Arduino_UNO.ino.cpp:27:10-27:20 -> file:///g%3A/11.ZhiYi/5.Tutorial/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/4_Arduino_Code/6.2_Arduino_UNO/6.2_Arduino_UNO.ino:25:10-25:20 (.ino)[0m
+16:41:56.272067 [92m                textDocument/documentSymbol 2: file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server1226066953/sketch/6.2_Arduino_UNO.ino.cpp (0 document symbols)[0m
+16:41:56.272067 [92m                textDocument/documentSymbol 2:   > convert SymbolKind:Variable 28:0-28:28[0m
+16:41:56.273064 [92m                textDocument/documentSymbol 2: Range: file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server1226066953/sketch/6.2_Arduino_UNO.ino.cpp:28:0-28:28 -> file:///g%3A/11.ZhiYi/5.Tutorial/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/4_Arduino_Code/6.2_Arduino_UNO/6.2_Arduino_UNO.ino:26:0-26:28 (.ino)[0m
+16:41:56.275059 [92m                textDocument/documentSymbol 2: Range: file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server1226066953/sketch/6.2_Arduino_UNO.ino.cpp:28:10-28:18 -> file:///g%3A/11.ZhiYi/5.Tutorial/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/4_Arduino_Code/6.2_Arduino_UNO/6.2_Arduino_UNO.ino:26:10-26:18 (.ino)[0m
+16:41:56.275059 [92m                textDocument/documentSymbol 2: file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server1226066953/sketch/6.2_Arduino_UNO.ino.cpp (0 document symbols)[0m
+16:41:56.275059 [92m                textDocument/documentSymbol 2:   > convert SymbolKind:Variable 29:0-29:29[0m
+16:41:56.276056 [92m                textDocument/documentSymbol 2: Range: file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server1226066953/sketch/6.2_Arduino_UNO.ino.cpp:29:0-29:29 -> file:///g%3A/11.ZhiYi/5.Tutorial/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/4_Arduino_Code/6.2_Arduino_UNO/6.2_Arduino_UNO.ino:27:0-27:29 (.ino)[0m
+16:41:56.278051 [92m                textDocument/documentSymbol 2: Range: file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server1226066953/sketch/6.2_Arduino_UNO.ino.cpp:29:10-29:21 -> file:///g%3A/11.ZhiYi/5.Tutorial/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/4_Arduino_Code/6.2_Arduino_UNO/6.2_Arduino_UNO.ino:27:10-27:21 (.ino)[0m
+16:41:56.278051 [92m                textDocument/documentSymbol 2: file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server1226066953/sketch/6.2_Arduino_UNO.ino.cpp (0 document symbols)[0m
+16:41:56.278051 [92m                textDocument/documentSymbol 2:   > convert SymbolKind:Variable 30:0-30:28[0m
+16:41:56.280045 [92m                textDocument/documentSymbol 2: Range: file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server1226066953/sketch/6.2_Arduino_UNO.ino.cpp:30:0-30:28 -> file:///g%3A/11.ZhiYi/5.Tutorial/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/4_Arduino_Code/6.2_Arduino_UNO/6.2_Arduino_UNO.ino:28:0-28:28 (.ino)[0m
+16:41:56.281042 [92m                textDocument/documentSymbol 2: Range: file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server1226066953/sketch/6.2_Arduino_UNO.ino.cpp:30:10-30:19 -> file:///g%3A/11.ZhiYi/5.Tutorial/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/4_Arduino_Code/6.2_Arduino_UNO/6.2_Arduino_UNO.ino:28:10-28:19 (.ino)[0m
+16:41:56.281042 [92m                textDocument/documentSymbol 2: file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server1226066953/sketch/6.2_Arduino_UNO.ino.cpp (0 document symbols)[0m
+16:41:56.281042 [92m                textDocument/documentSymbol 2:   > convert SymbolKind:Variable 31:0-31:28[0m
+16:41:56.283077 [92m                textDocument/documentSymbol 2: Range: file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server1226066953/sketch/6.2_Arduino_UNO.ino.cpp:31:0-31:28 -> file:///g%3A/11.ZhiYi/5.Tutorial/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/4_Arduino_Code/6.2_Arduino_UNO/6.2_Arduino_UNO.ino:29:0-29:28 (.ino)[0m
+16:41:56.284605 [92m                textDocument/documentSymbol 2: Range: file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server1226066953/sketch/6.2_Arduino_UNO.ino.cpp:31:10-31:22 -> file:///g%3A/11.ZhiYi/5.Tutorial/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/4_Arduino_Code/6.2_Arduino_UNO/6.2_Arduino_UNO.ino:29:10-29:22 (.ino)[0m
+16:41:56.284605 [92m                textDocument/documentSymbol 2: file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server1226066953/sketch/6.2_Arduino_UNO.ino.cpp (0 document symbols)[0m
+16:41:56.284605 [92m                textDocument/documentSymbol 2:   > convert SymbolKind:Variable 32:0-32:27[0m
+16:41:56.286360 [92m                textDocument/documentSymbol 2: Range: file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server1226066953/sketch/6.2_Arduino_UNO.ino.cpp:32:0-32:27 -> file:///g%3A/11.ZhiYi/5.Tutorial/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/4_Arduino_Code/6.2_Arduino_UNO/6.2_Arduino_UNO.ino:30:0-30:27 (.ino)[0m
+16:41:56.287993 [92m                textDocument/documentSymbol 2: Range: file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server1226066953/sketch/6.2_Arduino_UNO.ino.cpp:32:10-32:14 -> file:///g%3A/11.ZhiYi/5.Tutorial/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/4_Arduino_Code/6.2_Arduino_UNO/6.2_Arduino_UNO.ino:30:10-30:14 (.ino)[0m
+16:41:56.287993 [92m                textDocument/documentSymbol 2: file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server1226066953/sketch/6.2_Arduino_UNO.ino.cpp (0 document symbols)[0m
+16:41:56.287993 [92m                textDocument/documentSymbol 2:   > convert SymbolKind:Variable 33:0-33:29[0m
+16:41:56.289590 [92m                textDocument/documentSymbol 2: Range: file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server1226066953/sketch/6.2_Arduino_UNO.ino.cpp:33:0-33:29 -> file:///g%3A/11.ZhiYi/5.Tutorial/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/4_Arduino_Code/6.2_Arduino_UNO/6.2_Arduino_UNO.ino:31:0-31:29 (.ino)[0m
+16:41:56.291164 [92m                textDocument/documentSymbol 2: Range: file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server1226066953/sketch/6.2_Arduino_UNO.ino.cpp:33:10-33:22 -> file:///g%3A/11.ZhiYi/5.Tutorial/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/4_Arduino_Code/6.2_Arduino_UNO/6.2_Arduino_UNO.ino:31:10-31:22 (.ino)[0m
+16:41:56.291229 [92m                textDocument/documentSymbol 2: file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server1226066953/sketch/6.2_Arduino_UNO.ino.cpp (0 document symbols)[0m
+16:41:56.291229 [92m                textDocument/documentSymbol 2:   > convert SymbolKind:Variable 34:0-34:28[0m
+16:41:56.292315 [92m                textDocument/documentSymbol 2: Range: file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server1226066953/sketch/6.2_Arduino_UNO.ino.cpp:34:0-34:28 -> file:///g%3A/11.ZhiYi/5.Tutorial/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/4_Arduino_Code/6.2_Arduino_UNO/6.2_Arduino_UNO.ino:32:0-32:28 (.ino)[0m
+16:41:56.293940 [92m                textDocument/documentSymbol 2: Range: file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server1226066953/sketch/6.2_Arduino_UNO.ino.cpp:34:10-34:19 -> file:///g%3A/11.ZhiYi/5.Tutorial/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/4_Arduino_Code/6.2_Arduino_UNO/6.2_Arduino_UNO.ino:32:10-32:19 (.ino)[0m
+16:41:56.293940 [92m                textDocument/documentSymbol 2: file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server1226066953/sketch/6.2_Arduino_UNO.ino.cpp (0 document symbols)[0m
+16:41:56.293940 [92m                textDocument/documentSymbol 2:   > convert SymbolKind:Variable 35:0-35:28[0m
+16:41:56.295552 [92m                textDocument/documentSymbol 2: Range: file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server1226066953/sketch/6.2_Arduino_UNO.ino.cpp:35:0-35:28 -> file:///g%3A/11.ZhiYi/5.Tutorial/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/4_Arduino_Code/6.2_Arduino_UNO/6.2_Arduino_UNO.ino:33:0-33:28 (.ino)[0m
+16:41:56.297155 [92m                textDocument/documentSymbol 2: Range: file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server1226066953/sketch/6.2_Arduino_UNO.ino.cpp:35:10-35:16 -> file:///g%3A/11.ZhiYi/5.Tutorial/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/4_Arduino_Code/6.2_Arduino_UNO/6.2_Arduino_UNO.ino:33:10-33:16 (.ino)[0m
+16:41:56.297155 [92m                textDocument/documentSymbol 2: file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server1226066953/sketch/6.2_Arduino_UNO.ino.cpp (0 document symbols)[0m
+16:41:56.297155 [92m                textDocument/documentSymbol 2:   > convert SymbolKind:Variable 36:0-36:28[0m
+16:41:56.298766 [92m                textDocument/documentSymbol 2: Range: file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server1226066953/sketch/6.2_Arduino_UNO.ino.cpp:36:0-36:28 -> file:///g%3A/11.ZhiYi/5.Tutorial/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/4_Arduino_Code/6.2_Arduino_UNO/6.2_Arduino_UNO.ino:34:0-34:28 (.ino)[0m
+16:41:56.300368 [92m                textDocument/documentSymbol 2: Range: file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server1226066953/sketch/6.2_Arduino_UNO.ino.cpp:36:10-36:16 -> file:///g%3A/11.ZhiYi/5.Tutorial/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/4_Arduino_Code/6.2_Arduino_UNO/6.2_Arduino_UNO.ino:34:10-34:16 (.ino)[0m
+16:41:56.300368 [92m                textDocument/documentSymbol 2: file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server1226066953/sketch/6.2_Arduino_UNO.ino.cpp (0 document symbols)[0m
+16:41:56.300368 [92m                textDocument/documentSymbol 2:   > convert SymbolKind:Variable 37:0-37:28[0m
+16:41:56.301980 [92m                textDocument/documentSymbol 2: Range: file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server1226066953/sketch/6.2_Arduino_UNO.ino.cpp:37:0-37:28 -> file:///g%3A/11.ZhiYi/5.Tutorial/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/4_Arduino_Code/6.2_Arduino_UNO/6.2_Arduino_UNO.ino:35:0-35:28 (.ino)[0m
+16:41:56.303569 [92m                textDocument/documentSymbol 2: Range: file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server1226066953/sketch/6.2_Arduino_UNO.ino.cpp:37:10-37:16 -> file:///g%3A/11.ZhiYi/5.Tutorial/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/4_Arduino_Code/6.2_Arduino_UNO/6.2_Arduino_UNO.ino:35:10-35:16 (.ino)[0m
+16:41:56.303569 [92m                textDocument/documentSymbol 2: file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server1226066953/sketch/6.2_Arduino_UNO.ino.cpp (0 document symbols)[0m
+16:41:56.303569 [92m                textDocument/documentSymbol 2:   > convert SymbolKind:Variable 38:0-38:28[0m
+16:41:56.305117 [92m                textDocument/documentSymbol 2: Range: file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server1226066953/sketch/6.2_Arduino_UNO.ino.cpp:38:0-38:28 -> file:///g%3A/11.ZhiYi/5.Tutorial/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/4_Arduino_Code/6.2_Arduino_UNO/6.2_Arduino_UNO.ino:36:0-36:28 (.ino)[0m
+16:41:56.306860 [92m                textDocument/documentSymbol 2: Range: file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server1226066953/sketch/6.2_Arduino_UNO.ino.cpp:38:10-38:16 -> file:///g%3A/11.ZhiYi/5.Tutorial/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/4_Arduino_Code/6.2_Arduino_UNO/6.2_Arduino_UNO.ino:36:10-36:16 (.ino)[0m
+16:41:56.306860 [92m                textDocument/documentSymbol 2: file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server1226066953/sketch/6.2_Arduino_UNO.ino.cpp (0 document symbols)[0m
+16:41:56.306860 [92m                textDocument/documentSymbol 2:   > convert SymbolKind:Variable 39:0-39:29[0m
+16:41:56.308422 [92m                textDocument/documentSymbol 2: Range: file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server1226066953/sketch/6.2_Arduino_UNO.ino.cpp:39:0-39:29 -> file:///g%3A/11.ZhiYi/5.Tutorial/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/4_Arduino_Code/6.2_Arduino_UNO/6.2_Arduino_UNO.ino:37:0-37:29 (.ino)[0m
+16:41:56.309978 [92m                textDocument/documentSymbol 2: Range: file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server1226066953/sketch/6.2_Arduino_UNO.ino.cpp:39:10-39:19 -> file:///g%3A/11.ZhiYi/5.Tutorial/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/4_Arduino_Code/6.2_Arduino_UNO/6.2_Arduino_UNO.ino:37:10-37:19 (.ino)[0m
+16:41:56.309978 [92m                textDocument/documentSymbol 2: file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server1226066953/sketch/6.2_Arduino_UNO.ino.cpp (0 document symbols)[0m
+16:41:56.309978 [92m                textDocument/documentSymbol 2:   > convert SymbolKind:Variable 40:0-40:29[0m
+16:41:56.311581 [92m                textDocument/documentSymbol 2: Range: file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server1226066953/sketch/6.2_Arduino_UNO.ino.cpp:40:0-40:29 -> file:///g%3A/11.ZhiYi/5.Tutorial/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/4_Arduino_Code/6.2_Arduino_UNO/6.2_Arduino_UNO.ino:38:0-38:29 (.ino)[0m
+16:41:56.313173 [92m                textDocument/documentSymbol 2: Range: file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server1226066953/sketch/6.2_Arduino_UNO.ino.cpp:40:10-40:20 -> file:///g%3A/11.ZhiYi/5.Tutorial/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/4_Arduino_Code/6.2_Arduino_UNO/6.2_Arduino_UNO.ino:38:10-38:20 (.ino)[0m
+16:41:56.313173 [92m                textDocument/documentSymbol 2: file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server1226066953/sketch/6.2_Arduino_UNO.ino.cpp (0 document symbols)[0m
+16:41:56.313173 [92m                textDocument/documentSymbol 2:   > convert SymbolKind:Variable 42:0-42:18[0m
+16:41:56.314715 [92m                textDocument/documentSymbol 2: Range: file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server1226066953/sketch/6.2_Arduino_UNO.ino.cpp:42:0-42:18 -> file:///g%3A/11.ZhiYi/5.Tutorial/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/4_Arduino_Code/6.2_Arduino_UNO/6.2_Arduino_UNO.ino:40:0-40:18 (.ino)[0m
+16:41:56.316307 [92m                textDocument/documentSymbol 2: Range: file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server1226066953/sketch/6.2_Arduino_UNO.ino.cpp:42:4-42:18 -> file:///g%3A/11.ZhiYi/5.Tutorial/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/4_Arduino_Code/6.2_Arduino_UNO/6.2_Arduino_UNO.ino:40:4-40:18 (.ino)[0m
+16:41:56.316307 [92m                textDocument/documentSymbol 2: file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server1226066953/sketch/6.2_Arduino_UNO.ino.cpp (0 document symbols)[0m
+16:41:56.316307 [92m                textDocument/documentSymbol 2:   > convert SymbolKind:Variable 43:0-43:20[0m
+16:41:56.317901 [92m                textDocument/documentSymbol 2: Range: file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server1226066953/sketch/6.2_Arduino_UNO.ino.cpp:43:0-43:20 -> file:///g%3A/11.ZhiYi/5.Tutorial/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/4_Arduino_Code/6.2_Arduino_UNO/6.2_Arduino_UNO.ino:41:0-41:20 (.ino)[0m
+16:41:56.319488 [92m                textDocument/documentSymbol 2: Range: file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server1226066953/sketch/6.2_Arduino_UNO.ino.cpp:43:4-43:20 -> file:///g%3A/11.ZhiYi/5.Tutorial/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/4_Arduino_Code/6.2_Arduino_UNO/6.2_Arduino_UNO.ino:41:4-41:20 (.ino)[0m
+16:41:56.319488 [92m                textDocument/documentSymbol 2: file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server1226066953/sketch/6.2_Arduino_UNO.ino.cpp (0 document symbols)[0m
+16:41:56.319488 [92m                textDocument/documentSymbol 2:   > convert SymbolKind:Variable 44:0-44:19[0m
+16:41:56.321337 [92m                textDocument/documentSymbol 2: Range: file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server1226066953/sketch/6.2_Arduino_UNO.ino.cpp:44:0-44:19 -> file:///g%3A/11.ZhiYi/5.Tutorial/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/4_Arduino_Code/6.2_Arduino_UNO/6.2_Arduino_UNO.ino:42:0-42:19 (.ino)[0m
+16:41:56.322870 [92m                textDocument/documentSymbol 2: Range: file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server1226066953/sketch/6.2_Arduino_UNO.ino.cpp:44:4-44:19 -> file:///g%3A/11.ZhiYi/5.Tutorial/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/4_Arduino_Code/6.2_Arduino_UNO/6.2_Arduino_UNO.ino:42:4-42:19 (.ino)[0m
+16:41:56.322870 [92m                textDocument/documentSymbol 2: file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server1226066953/sketch/6.2_Arduino_UNO.ino.cpp (0 document symbols)[0m
+16:41:56.322870 [92m                textDocument/documentSymbol 2:   > convert SymbolKind:Variable 45:0-45:20[0m
+16:41:56.324449 [92m                textDocument/documentSymbol 2: Range: file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server1226066953/sketch/6.2_Arduino_UNO.ino.cpp:45:0-45:20 -> file:///g%3A/11.ZhiYi/5.Tutorial/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/4_Arduino_Code/6.2_Arduino_UNO/6.2_Arduino_UNO.ino:43:0-43:20 (.ino)[0m
+16:41:56.326025 [92m                textDocument/documentSymbol 2: Range: file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server1226066953/sketch/6.2_Arduino_UNO.ino.cpp:45:4-45:14 -> file:///g%3A/11.ZhiYi/5.Tutorial/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/4_Arduino_Code/6.2_Arduino_UNO/6.2_Arduino_UNO.ino:43:4-43:14 (.ino)[0m
+16:41:56.326025 [92m                textDocument/documentSymbol 2: file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server1226066953/sketch/6.2_Arduino_UNO.ino.cpp (0 document symbols)[0m
+16:41:56.326025 [92m                textDocument/documentSymbol 2:   > convert SymbolKind:Variable 47:0-47:20[0m
+16:41:56.327551 [92m                textDocument/documentSymbol 2: Range: file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server1226066953/sketch/6.2_Arduino_UNO.ino.cpp:47:0-47:20 -> file:///g%3A/11.ZhiYi/5.Tutorial/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/4_Arduino_Code/6.2_Arduino_UNO/6.2_Arduino_UNO.ino:45:0-45:20 (.ino)[0m
+16:41:56.329078 [92m                textDocument/documentSymbol 2: Range: file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server1226066953/sketch/6.2_Arduino_UNO.ino.cpp:47:4-47:16 -> file:///g%3A/11.ZhiYi/5.Tutorial/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/4_Arduino_Code/6.2_Arduino_UNO/6.2_Arduino_UNO.ino:45:4-45:16 (.ino)[0m
+16:41:56.329078 [92m                textDocument/documentSymbol 2: file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server1226066953/sketch/6.2_Arduino_UNO.ino.cpp (0 document symbols)[0m
+16:41:56.329078 [92m                textDocument/documentSymbol 2:   > convert SymbolKind:Variable 48:0-48:22[0m
+16:41:56.330605 [92m                textDocument/documentSymbol 2: Range: file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server1226066953/sketch/6.2_Arduino_UNO.ino.cpp:48:0-48:22 -> file:///g%3A/11.ZhiYi/5.Tutorial/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/4_Arduino_Code/6.2_Arduino_UNO/6.2_Arduino_UNO.ino:46:0-46:22 (.ino)[0m
+16:41:56.332131 [92m                textDocument/documentSymbol 2: Range: file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server1226066953/sketch/6.2_Arduino_UNO.ino.cpp:48:4-48:18 -> file:///g%3A/11.ZhiYi/5.Tutorial/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/4_Arduino_Code/6.2_Arduino_UNO/6.2_Arduino_UNO.ino:46:4-46:18 (.ino)[0m
+16:41:56.332131 [92m                textDocument/documentSymbol 2: file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server1226066953/sketch/6.2_Arduino_UNO.ino.cpp (0 document symbols)[0m
+16:41:56.332131 [92m                textDocument/documentSymbol 2:   > convert SymbolKind:Variable 49:0-49:21[0m
+16:41:56.333657 [92m                textDocument/documentSymbol 2: Range: file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server1226066953/sketch/6.2_Arduino_UNO.ino.cpp:49:0-49:21 -> file:///g%3A/11.ZhiYi/5.Tutorial/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/4_Arduino_Code/6.2_Arduino_UNO/6.2_Arduino_UNO.ino:47:0-47:21 (.ino)[0m
+16:41:56.335186 [92m                textDocument/documentSymbol 2: Range: file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server1226066953/sketch/6.2_Arduino_UNO.ino.cpp:49:4-49:17 -> file:///g%3A/11.ZhiYi/5.Tutorial/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/4_Arduino_Code/6.2_Arduino_UNO/6.2_Arduino_UNO.ino:47:4-47:17 (.ino)[0m
+16:41:56.335186 [92m                textDocument/documentSymbol 2: file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server1226066953/sketch/6.2_Arduino_UNO.ino.cpp (0 document symbols)[0m
+16:41:56.335186 [92m                textDocument/documentSymbol 2:   > convert SymbolKind:Variable 51:0-51:24[0m
+16:41:56.336343 [92m                textDocument/documentSymbol 2: Range: file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server1226066953/sketch/6.2_Arduino_UNO.ino.cpp:51:0-51:24 -> file:///g%3A/11.ZhiYi/5.Tutorial/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/4_Arduino_Code/6.2_Arduino_UNO/6.2_Arduino_UNO.ino:49:0-49:24 (.ino)[0m
+16:41:56.337892 [92m                textDocument/documentSymbol 2: Range: file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server1226066953/sketch/6.2_Arduino_UNO.ino.cpp:51:5-51:15 -> file:///g%3A/11.ZhiYi/5.Tutorial/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/4_Arduino_Code/6.2_Arduino_UNO/6.2_Arduino_UNO.ino:49:5-49:15 (.ino)[0m
+16:41:56.337892 [92m                textDocument/documentSymbol 2: file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server1226066953/sketch/6.2_Arduino_UNO.ino.cpp (0 document symbols)[0m
+16:41:56.337892 [92m                textDocument/documentSymbol 2:   > convert SymbolKind:Variable 52:0-52:19[0m
+16:41:56.339877 [92m                textDocument/documentSymbol 2: Range: file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server1226066953/sketch/6.2_Arduino_UNO.ino.cpp:52:0-52:19 -> file:///g%3A/11.ZhiYi/5.Tutorial/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/4_Arduino_Code/6.2_Arduino_UNO/6.2_Arduino_UNO.ino:50:0-50:19 (.ino)[0m
+16:41:56.341484 [92m                textDocument/documentSymbol 2: Range: file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server1226066953/sketch/6.2_Arduino_UNO.ino.cpp:52:9-52:14 -> file:///g%3A/11.ZhiYi/5.Tutorial/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/4_Arduino_Code/6.2_Arduino_UNO/6.2_Arduino_UNO.ino:50:9-50:14 (.ino)[0m
+16:41:56.341484 [92m                textDocument/documentSymbol 2: file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server1226066953/sketch/6.2_Arduino_UNO.ino.cpp (0 document symbols)[0m
+16:41:56.341484 [92m                textDocument/documentSymbol 2:   > convert SymbolKind:Variable 53:0-53:17[0m
+16:41:56.342985 [92m                textDocument/documentSymbol 2: Range: file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server1226066953/sketch/6.2_Arduino_UNO.ino.cpp:53:0-53:17 -> file:///g%3A/11.ZhiYi/5.Tutorial/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/4_Arduino_Code/6.2_Arduino_UNO/6.2_Arduino_UNO.ino:51:0-51:17 (.ino)[0m
+16:41:56.344980 [92m                textDocument/documentSymbol 2: Range: file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server1226066953/sketch/6.2_Arduino_UNO.ino.cpp:53:5-53:10 -> file:///g%3A/11.ZhiYi/5.Tutorial/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/4_Arduino_Code/6.2_Arduino_UNO/6.2_Arduino_UNO.ino:51:5-51:10 (.ino)[0m
+16:41:56.344980 [92m                textDocument/documentSymbol 2: file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server1226066953/sketch/6.2_Arduino_UNO.ino.cpp (0 document symbols)[0m
+16:41:56.344980 [92m                textDocument/documentSymbol 2:   > convert SymbolKind:Variable 54:0-54:18[0m
+16:41:56.346186 [92m                textDocument/documentSymbol 2: Range: file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server1226066953/sketch/6.2_Arduino_UNO.ino.cpp:54:0-54:18 -> file:///g%3A/11.ZhiYi/5.Tutorial/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/4_Arduino_Code/6.2_Arduino_UNO/6.2_Arduino_UNO.ino:52:0-52:18 (.ino)[0m
+16:41:56.348179 [92m                textDocument/documentSymbol 2: Range: file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server1226066953/sketch/6.2_Arduino_UNO.ino.cpp:54:5-54:14 -> file:///g%3A/11.ZhiYi/5.Tutorial/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/4_Arduino_Code/6.2_Arduino_UNO/6.2_Arduino_UNO.ino:52:5-52:14 (.ino)[0m
+16:41:56.348179 [92m                textDocument/documentSymbol 2: file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server1226066953/sketch/6.2_Arduino_UNO.ino.cpp (0 document symbols)[0m
+16:41:56.348179 [92m                textDocument/documentSymbol 2:   > convert SymbolKind:Variable 55:0-55:19[0m
+16:41:56.350174 [92m                textDocument/documentSymbol 2: Range: file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server1226066953/sketch/6.2_Arduino_UNO.ino.cpp:55:0-55:19 -> file:///g%3A/11.ZhiYi/5.Tutorial/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/4_Arduino_Code/6.2_Arduino_UNO/6.2_Arduino_UNO.ino:53:0-53:19 (.ino)[0m
+16:41:56.351171 [92m                textDocument/documentSymbol 2: Range: file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server1226066953/sketch/6.2_Arduino_UNO.ino.cpp:55:4-55:15 -> file:///g%3A/11.ZhiYi/5.Tutorial/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/4_Arduino_Code/6.2_Arduino_UNO/6.2_Arduino_UNO.ino:53:4-53:15 (.ino)[0m
+16:41:56.351171 [92m                textDocument/documentSymbol 2: file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server1226066953/sketch/6.2_Arduino_UNO.ino.cpp (0 document symbols)[0m
+16:41:56.351171 [92m                textDocument/documentSymbol 2:   > convert SymbolKind:Function 58:0-58:12[0m
+16:41:56.353166 [92m                textDocument/documentSymbol 2: Range is in PREPROCESSED section of the sketch[0m
+16:41:56.353166 [92m                textDocument/documentSymbol 2: Range: file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server1226066953/sketch/6.2_Arduino_UNO.ino.cpp:58:0-58:12 -> file:///g%3A/11.ZhiYi/5.Tutorial/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/4_Arduino_Code/6.2_Arduino_UNO/6.2_Arduino_UNO.ino:55:0-55:12 (.ino)[0m
+16:41:56.353166 [92m                textDocument/documentSymbol 2:     symbol is in the preprocessed section of the sketch.ino.cpp, skipping[0m
+16:41:56.353166 [92m                textDocument/documentSymbol 2:   > convert SymbolKind:Function 60:0-60:11[0m
+16:41:56.355160 [92m                textDocument/documentSymbol 2: Range is in PREPROCESSED section of the sketch[0m
+16:41:56.355160 [92m                textDocument/documentSymbol 2: Range: file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server1226066953/sketch/6.2_Arduino_UNO.ino.cpp:60:0-60:11 -> file:///g%3A/11.ZhiYi/5.Tutorial/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/4_Arduino_Code/6.2_Arduino_UNO/6.2_Arduino_UNO.ino:81:0-81:11 (.ino)[0m
+16:41:56.355160 [92m                textDocument/documentSymbol 2:     symbol is in the preprocessed section of the sketch.ino.cpp, skipping[0m
+16:41:56.355160 [92m                textDocument/documentSymbol 2:   > convert SymbolKind:Function 62:0-62:29[0m
+16:41:56.357155 [92m                textDocument/documentSymbol 2: Range is in PREPROCESSED section of the sketch[0m
+16:41:56.357155 [92m                textDocument/documentSymbol 2: Range: file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server1226066953/sketch/6.2_Arduino_UNO.ino.cpp:62:0-62:29 -> file:///g%3A/11.ZhiYi/5.Tutorial/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/4_Arduino_Code/6.2_Arduino_UNO/6.2_Arduino_UNO.ino:102:0-102:29 (.ino)[0m
+16:41:56.357155 [92m                textDocument/documentSymbol 2:     symbol is in the preprocessed section of the sketch.ino.cpp, skipping[0m
+16:41:56.357155 [92m                textDocument/documentSymbol 2:   > convert SymbolKind:Function 64:0-64:18[0m
+16:41:56.358152 [92m                textDocument/documentSymbol 2: Range is in PREPROCESSED section of the sketch[0m
+16:41:56.358152 [92m                textDocument/documentSymbol 2: Range: file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server1226066953/sketch/6.2_Arduino_UNO.ino.cpp:64:0-64:18 -> file:///g%3A/11.ZhiYi/5.Tutorial/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/4_Arduino_Code/6.2_Arduino_UNO/6.2_Arduino_UNO.ino:150:0-150:18 (.ino)[0m
+16:41:56.358152 [92m                textDocument/documentSymbol 2:     symbol is in the preprocessed section of the sketch.ino.cpp, skipping[0m
+16:41:56.358152 [92m                textDocument/documentSymbol 2:   > convert SymbolKind:Function 66:0-66:18[0m
+16:41:56.360147 [92m                textDocument/documentSymbol 2: Range is in PREPROCESSED section of the sketch[0m
+16:41:56.360147 [92m                textDocument/documentSymbol 2: Range: file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server1226066953/sketch/6.2_Arduino_UNO.ino.cpp:66:0-66:18 -> file:///g%3A/11.ZhiYi/5.Tutorial/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/4_Arduino_Code/6.2_Arduino_UNO/6.2_Arduino_UNO.ino:280:0-280:18 (.ino)[0m
+16:41:56.360147 [92m                textDocument/documentSymbol 2:     symbol is in the preprocessed section of the sketch.ino.cpp, skipping[0m
+16:41:56.360147 [92m                textDocument/documentSymbol 2:   > convert SymbolKind:Function 68:0-68:18[0m
+16:41:56.361144 [92m                textDocument/documentSymbol 2: Range is in PREPROCESSED section of the sketch[0m
+16:41:56.361144 [92m                textDocument/documentSymbol 2: Range: file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server1226066953/sketch/6.2_Arduino_UNO.ino.cpp:68:0-68:18 -> file:///g%3A/11.ZhiYi/5.Tutorial/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/4_Arduino_Code/6.2_Arduino_UNO/6.2_Arduino_UNO.ino:307:0-307:18 (.ino)[0m
+16:41:56.361144 [92m                textDocument/documentSymbol 2:     symbol is in the preprocessed section of the sketch.ino.cpp, skipping[0m
+16:41:56.361144 [92m                textDocument/documentSymbol 2:   > convert SymbolKind:Function 70:0-70:16[0m
+16:41:56.363139 [92m                textDocument/documentSymbol 2: Range is in PREPROCESSED section of the sketch[0m
+16:41:56.363139 [92m                textDocument/documentSymbol 2: Range: file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server1226066953/sketch/6.2_Arduino_UNO.ino.cpp:70:0-70:16 -> file:///g%3A/11.ZhiYi/5.Tutorial/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/4_Arduino_Code/6.2_Arduino_UNO/6.2_Arduino_UNO.ino:338:0-338:16 (.ino)[0m
+16:41:56.363139 [92m                textDocument/documentSymbol 2:     symbol is in the preprocessed section of the sketch.ino.cpp, skipping[0m
+16:41:56.363139 [92m                textDocument/documentSymbol 2:   > convert SymbolKind:Function 72:0-72:17[0m
+16:41:56.364136 [92m                textDocument/documentSymbol 2: Range is in PREPROCESSED section of the sketch[0m
+16:41:56.364136 [92m                textDocument/documentSymbol 2: Range: file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server1226066953/sketch/6.2_Arduino_UNO.ino.cpp:72:0-72:17 -> file:///g%3A/11.ZhiYi/5.Tutorial/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/4_Arduino_Code/6.2_Arduino_UNO/6.2_Arduino_UNO.ino:345:0-345:17 (.ino)[0m
+16:41:56.364136 [92m                textDocument/documentSymbol 2:     symbol is in the preprocessed section of the sketch.ino.cpp, skipping[0m
+16:41:56.364136 [92m                textDocument/documentSymbol 2:   > convert SymbolKind:Function 74:0-74:30[0m
+16:41:56.366131 [92m                textDocument/documentSymbol 2: Range is in PREPROCESSED section of the sketch[0m
+16:41:56.366131 [92m                textDocument/documentSymbol 2: Range: file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server1226066953/sketch/6.2_Arduino_UNO.ino.cpp:74:0-74:30 -> file:///g%3A/11.ZhiYi/5.Tutorial/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/4_Arduino_Code/6.2_Arduino_UNO/6.2_Arduino_UNO.ino:353:0-353:30 (.ino)[0m
+16:41:56.366131 [92m                textDocument/documentSymbol 2:     symbol is in the preprocessed section of the sketch.ino.cpp, skipping[0m
+16:41:56.366131 [92m                textDocument/documentSymbol 2:   > convert SymbolKind:Function 76:0-76:30[0m
+16:41:56.367128 [92m                textDocument/documentSymbol 2: Range is in PREPROCESSED section of the sketch[0m
+16:41:56.367128 [92m                textDocument/documentSymbol 2: Range: file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server1226066953/sketch/6.2_Arduino_UNO.ino.cpp:76:0-76:30 -> file:///g%3A/11.ZhiYi/5.Tutorial/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/4_Arduino_Code/6.2_Arduino_UNO/6.2_Arduino_UNO.ino:364:0-364:30 (.ino)[0m
+16:41:56.367128 [92m                textDocument/documentSymbol 2:     symbol is in the preprocessed section of the sketch.ino.cpp, skipping[0m
+16:41:56.367128 [92m                textDocument/documentSymbol 2:   > convert SymbolKind:Function 78:0-78:18[0m
+16:41:56.369591 [92m                textDocument/documentSymbol 2: Range is in PREPROCESSED section of the sketch[0m
+16:41:56.369591 [92m                textDocument/documentSymbol 2: Range: file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server1226066953/sketch/6.2_Arduino_UNO.ino.cpp:78:0-78:18 -> file:///g%3A/11.ZhiYi/5.Tutorial/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/4_Arduino_Code/6.2_Arduino_UNO/6.2_Arduino_UNO.ino:377:0-377:18 (.ino)[0m
+16:41:56.369591 [92m                textDocument/documentSymbol 2:     symbol is in the preprocessed section of the sketch.ino.cpp, skipping[0m
+16:41:56.369591 [92m                textDocument/documentSymbol 2:   > convert SymbolKind:Function 80:0-104:1[0m
+16:41:56.370677 [92m                textDocument/documentSymbol 2: Range: file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server1226066953/sketch/6.2_Arduino_UNO.ino.cpp:80:0-104:1 -> file:///g%3A/11.ZhiYi/5.Tutorial/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/4_Arduino_Code/6.2_Arduino_UNO/6.2_Arduino_UNO.ino:55:0-79:1 (.ino)[0m
+16:41:56.372338 [92m                textDocument/documentSymbol 2: Range: file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server1226066953/sketch/6.2_Arduino_UNO.ino.cpp:80:5-80:10 -> file:///g%3A/11.ZhiYi/5.Tutorial/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/4_Arduino_Code/6.2_Arduino_UNO/6.2_Arduino_UNO.ino:55:5-55:10 (.ino)[0m
+16:41:56.372338 [92m                textDocument/documentSymbol 2: file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server1226066953/sketch/6.2_Arduino_UNO.ino.cpp (0 document symbols)[0m
+16:41:56.372338 [92m                textDocument/documentSymbol 2:   > convert SymbolKind:Function 106:0-125:1[0m
+16:41:56.374164 [92m                textDocument/documentSymbol 2: Range: file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server1226066953/sketch/6.2_Arduino_UNO.ino.cpp:106:0-125:1 -> file:///g%3A/11.ZhiYi/5.Tutorial/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/4_Arduino_Code/6.2_Arduino_UNO/6.2_Arduino_UNO.ino:81:0-100:1 (.ino)[0m
+16:41:56.375471 [92m                textDocument/documentSymbol 2: Range: file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server1226066953/sketch/6.2_Arduino_UNO.ino.cpp:106:5-106:9 -> file:///g%3A/11.ZhiYi/5.Tutorial/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/4_Arduino_Code/6.2_Arduino_UNO/6.2_Arduino_UNO.ino:81:5-81:9 (.ino)[0m
+16:41:56.375471 [92m                textDocument/documentSymbol 2: file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server1226066953/sketch/6.2_Arduino_UNO.ino.cpp (0 document symbols)[0m
+16:41:56.375471 [92m                textDocument/documentSymbol 2:   > convert SymbolKind:Function 127:0-173:1[0m
+16:41:56.377111 [92m                textDocument/documentSymbol 2: Range: file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server1226066953/sketch/6.2_Arduino_UNO.ino.cpp:127:0-173:1 -> file:///g%3A/11.ZhiYi/5.Tutorial/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/4_Arduino_Code/6.2_Arduino_UNO/6.2_Arduino_UNO.ino:102:0-148:1 (.ino)[0m
+16:41:56.378196 [92m                textDocument/documentSymbol 2: Range: file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server1226066953/sketch/6.2_Arduino_UNO.ino.cpp:127:5-127:16 -> file:///g%3A/11.ZhiYi/5.Tutorial/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/4_Arduino_Code/6.2_Arduino_UNO/6.2_Arduino_UNO.ino:102:5-102:16 (.ino)[0m
+16:41:56.378196 [92m                textDocument/documentSymbol 2: file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server1226066953/sketch/6.2_Arduino_UNO.ino.cpp (0 document symbols)[0m
+16:41:56.378196 [92m                textDocument/documentSymbol 2:   > convert SymbolKind:Function 175:0-303:1[0m
+16:41:56.379862 [92m                textDocument/documentSymbol 2: Range: file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server1226066953/sketch/6.2_Arduino_UNO.ino.cpp:175:0-303:1 -> file:///g%3A/11.ZhiYi/5.Tutorial/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/4_Arduino_Code/6.2_Arduino_UNO/6.2_Arduino_UNO.ino:150:0-278:1 (.ino)[0m
+16:41:56.381561 [92m                textDocument/documentSymbol 2: Range: file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server1226066953/sketch/6.2_Arduino_UNO.ino.cpp:175:5-175:16 -> file:///g%3A/11.ZhiYi/5.Tutorial/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/4_Arduino_Code/6.2_Arduino_UNO/6.2_Arduino_UNO.ino:150:5-150:16 (.ino)[0m
+16:41:56.381561 [92m                textDocument/documentSymbol 2: file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server1226066953/sketch/6.2_Arduino_UNO.ino.cpp (0 document symbols)[0m
+16:41:56.381561 [92m                textDocument/documentSymbol 2:   > convert SymbolKind:Function 305:0-330:1[0m
+16:41:56.383324 [92m                textDocument/documentSymbol 2: Range: file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server1226066953/sketch/6.2_Arduino_UNO.ino.cpp:305:0-330:1 -> file:///g%3A/11.ZhiYi/5.Tutorial/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/4_Arduino_Code/6.2_Arduino_UNO/6.2_Arduino_UNO.ino:280:0-305:1 (.ino)[0m
+16:41:56.385042 [92m                textDocument/documentSymbol 2: Range: file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server1226066953/sketch/6.2_Arduino_UNO.ino.cpp:305:5-305:16 -> file:///g%3A/11.ZhiYi/5.Tutorial/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/4_Arduino_Code/6.2_Arduino_UNO/6.2_Arduino_UNO.ino:280:5-280:16 (.ino)[0m
+16:41:56.385042 [92m                textDocument/documentSymbol 2: file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server1226066953/sketch/6.2_Arduino_UNO.ino.cpp (0 document symbols)[0m
+16:41:56.385042 [92m                textDocument/documentSymbol 2:   > convert SymbolKind:Function 332:0-362:1[0m
+16:41:56.386632 [92m                textDocument/documentSymbol 2: Range: file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server1226066953/sketch/6.2_Arduino_UNO.ino.cpp:332:0-362:1 -> file:///g%3A/11.ZhiYi/5.Tutorial/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/4_Arduino_Code/6.2_Arduino_UNO/6.2_Arduino_UNO.ino:307:0-337:1 (.ino)[0m
+16:41:56.388319 [92m                textDocument/documentSymbol 2: Range: file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server1226066953/sketch/6.2_Arduino_UNO.ino.cpp:332:5-332:16 -> file:///g%3A/11.ZhiYi/5.Tutorial/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/4_Arduino_Code/6.2_Arduino_UNO/6.2_Arduino_UNO.ino:307:5-307:16 (.ino)[0m
+16:41:56.388319 [92m                textDocument/documentSymbol 2: file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server1226066953/sketch/6.2_Arduino_UNO.ino.cpp (0 document symbols)[0m
+16:41:56.388319 [92m                textDocument/documentSymbol 2:   > convert SymbolKind:Function 363:0-369:1[0m
+16:41:56.389921 [92m                textDocument/documentSymbol 2: Range: file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server1226066953/sketch/6.2_Arduino_UNO.ino.cpp:363:0-369:1 -> file:///g%3A/11.ZhiYi/5.Tutorial/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/4_Arduino_Code/6.2_Arduino_UNO/6.2_Arduino_UNO.ino:338:0-344:1 (.ino)[0m
+16:41:56.391976 [92m                textDocument/documentSymbol 2: Range: file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server1226066953/sketch/6.2_Arduino_UNO.ino.cpp:363:5-363:14 -> file:///g%3A/11.ZhiYi/5.Tutorial/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/4_Arduino_Code/6.2_Arduino_UNO/6.2_Arduino_UNO.ino:338:5-338:14 (.ino)[0m
+16:41:56.392025 [92m                textDocument/documentSymbol 2: file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server1226066953/sketch/6.2_Arduino_UNO.ino.cpp (0 document symbols)[0m
+16:41:56.392025 [92m                textDocument/documentSymbol 2:   > convert SymbolKind:Function 370:0-376:1[0m
+16:41:56.393564 [92m                textDocument/documentSymbol 2: Range: file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server1226066953/sketch/6.2_Arduino_UNO.ino.cpp:370:0-376:1 -> file:///g%3A/11.ZhiYi/5.Tutorial/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/4_Arduino_Code/6.2_Arduino_UNO/6.2_Arduino_UNO.ino:345:0-351:1 (.ino)[0m
+16:41:56.395102 [92m                textDocument/documentSymbol 2: Range: file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server1226066953/sketch/6.2_Arduino_UNO.ino.cpp:370:5-370:15 -> file:///g%3A/11.ZhiYi/5.Tutorial/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/4_Arduino_Code/6.2_Arduino_UNO/6.2_Arduino_UNO.ino:345:5-345:15 (.ino)[0m
+16:41:56.395102 [92m                textDocument/documentSymbol 2: file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server1226066953/sketch/6.2_Arduino_UNO.ino.cpp (0 document symbols)[0m
+16:41:56.395102 [92m                textDocument/documentSymbol 2:   > convert SymbolKind:Function 378:0-387:1[0m
+16:41:56.396093 [92m                textDocument/documentSymbol 2: Range: file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server1226066953/sketch/6.2_Arduino_UNO.ino.cpp:378:0-387:1 -> file:///g%3A/11.ZhiYi/5.Tutorial/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/4_Arduino_Code/6.2_Arduino_UNO/6.2_Arduino_UNO.ino:353:0-362:1 (.ino)[0m
+16:41:56.398593 [92m                textDocument/documentSymbol 2: Range: file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server1226066953/sketch/6.2_Arduino_UNO.ino.cpp:378:5-378:10 -> file:///g%3A/11.ZhiYi/5.Tutorial/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/4_Arduino_Code/6.2_Arduino_UNO/6.2_Arduino_UNO.ino:353:5-353:10 (.ino)[0m
+16:41:56.398593 [92m                textDocument/documentSymbol 2: file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server1226066953/sketch/6.2_Arduino_UNO.ino.cpp (0 document symbols)[0m
+16:41:56.398593 [92m                textDocument/documentSymbol 2:   > convert SymbolKind:Function 389:0-400:1[0m
+16:41:56.400588 [92m                textDocument/documentSymbol 2: Range: file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server1226066953/sketch/6.2_Arduino_UNO.ino.cpp:389:0-400:1 -> file:///g%3A/11.ZhiYi/5.Tutorial/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/4_Arduino_Code/6.2_Arduino_UNO/6.2_Arduino_UNO.ino:364:0-375:1 (.ino)[0m
+16:41:56.401585 [92m                textDocument/documentSymbol 2: Range: file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server1226066953/sketch/6.2_Arduino_UNO.ino.cpp:389:6-389:10 -> file:///g%3A/11.ZhiYi/5.Tutorial/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/4_Arduino_Code/6.2_Arduino_UNO/6.2_Arduino_UNO.ino:364:6-364:10 (.ino)[0m
+16:41:56.401585 [92m                textDocument/documentSymbol 2: file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server1226066953/sketch/6.2_Arduino_UNO.ino.cpp (0 document symbols)[0m
+16:41:56.401585 [92m                textDocument/documentSymbol 2:   > convert SymbolKind:Function 402:0-485:1[0m
+16:41:56.403580 [92m                textDocument/documentSymbol 2: Range: file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server1226066953/sketch/6.2_Arduino_UNO.ino.cpp:402:0-485:1 -> file:///g%3A/11.ZhiYi/5.Tutorial/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/4_Arduino_Code/6.2_Arduino_UNO/6.2_Arduino_UNO.ino:377:0-460:1 (.ino)[0m
+16:41:56.404577 [92m                textDocument/documentSymbol 2: Range: file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server1226066953/sketch/6.2_Arduino_UNO.ino.cpp:402:5-402:16 -> file:///g%3A/11.ZhiYi/5.Tutorial/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/4_Arduino_Code/6.2_Arduino_UNO/6.2_Arduino_UNO.ino:377:5-377:16 (.ino)[0m
+16:41:56.404577 [92m                textDocument/documentSymbol 2: file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server1226066953/sketch/6.2_Arduino_UNO.ino.cpp (0 document symbols)[0m
+16:41:56.405574 [92m                textDocument/documentSymbol 2: [93mread-unlocked[0m[0m
+16:41:56.405574 [32mIDE <-- LS RESP textDocument/documentSymbol 2[0m
+16:41:56.405574 OUT Elapsed: 0s
+16:41:56.405574 IN Elapsed: 0s
+16:41:56.405574 [92mIDE --> LS REQU textDocument/hover 3[0m
+16:41:56.405574 [92m                textDocument/hover 3: [93mread-locked[0m[0m
+16:41:56.406572 [92m                textDocument/hover 3: URI: file:///g%3A/11.ZhiYi/5.Tutorial/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/4_Arduino_Code/6.2_Arduino_UNO/6.2_Arduino_UNO.ino -> file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server1226066953/sketch/6.2_Arduino_UNO.ino.cpp[0m
+16:41:56.410562 [92m                textDocument/hover 3: file:///g%3A/11.ZhiYi/5.Tutorial/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/4_Arduino_Code/6.2_Arduino_UNO/6.2_Arduino_UNO.ino:32:43 -> file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server1226066953/sketch/6.2_Arduino_UNO.ino.cpp:34:43[0m
+16:41:56.410562 [91mIDE     LS --> Clangd REQU textDocument/hover 4[0m
+16:41:56.410562 OUT Elapsed: 0s
+16:41:56.412556 IN Elapsed: 171.699ms
+16:41:56.412556 [31mIDE     LS <-- Clangd RESP textDocument/hover 4[0m
+16:41:56.412556 [92m                textDocument/hover 3: null response[0m
+16:41:56.412556 [92m                textDocument/hover 3: [93mread-unlocked[0m[0m
+16:41:56.412556 [32mIDE <-- LS RESP textDocument/hover 3[0m
+16:41:56.412556 OUT Elapsed: 0s
+16:41:56.412556 IN Elapsed: 0s
+16:41:56.412556 IN Elapsed: 0s
+16:41:56.412556 IN Elapsed: 0s
+16:41:56.412556 [92mIDE --> LS REQU textDocument/hover 4[0m
+16:41:56.412556 [92m                textDocument/hover 4: [93mread-locked[0m[0m
+16:41:56.412556 [32mIDE --> LS RESP window/workDoneProgress/create 1[0m
+16:41:56.412556 [92mIDE <-- LS NOTIF $/progress[0m
+16:41:56.414551 [92m                textDocument/hover 4: URI: file:///g%3A/11.ZhiYi/5.Tutorial/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/4_Arduino_Code/6.2_Arduino_UNO/6.2_Arduino_UNO.ino -> file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server1226066953/sketch/6.2_Arduino_UNO.ino.cpp[0m
+16:41:56.414551 OUT Elapsed: 997.7µs
+16:41:56.415549 [92mIDE <-- LS NOTIF $/progress[0m
+16:41:56.415549 OUT Elapsed: 0s
+16:41:56.418541 [92m                textDocument/hover 4: file:///g%3A/11.ZhiYi/5.Tutorial/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/4_Arduino_Code/6.2_Arduino_UNO/6.2_Arduino_UNO.ino:30:48 -> file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server1226066953/sketch/6.2_Arduino_UNO.ino.cpp:32:48[0m
+16:41:56.418541 [91mIDE     LS --> Clangd REQU textDocument/hover 5[0m
+16:41:56.418541 OUT Elapsed: 0s
+16:41:56.420535 IN Elapsed: 7.979ms
+16:41:56.420535 [31mIDE     LS <-- Clangd RESP textDocument/hover 5[0m
+16:41:56.420535 [92m                textDocument/hover 4: null response[0m
+16:41:56.420535 [92m                textDocument/hover 4: [93mread-unlocked[0m[0m
+16:41:56.420535 [32mIDE <-- LS RESP textDocument/hover 4[0m
+16:41:56.420535 OUT Elapsed: 0s
+16:41:56.420535 IN Elapsed: 0s
+16:41:56.724760 IN Elapsed: 304.2252ms
+16:41:56.724760 [91mIDE     LS <-- Clangd NOTIF $/progress[0m
+16:41:56.724760 [91m                            $/progress: backgroundIndexProgress REPORT, 2/27, 7.0%[0m
+16:41:56.724760 IN Elapsed: 0s
+16:41:56.724760 [91mIDE     LS <-- Clangd NOTIF $/progress[0m
+16:41:56.725281 [91m                            $/progress: backgroundIndexProgress REPORT, 2/27, 7.0%[0m
+16:41:56.724760 [92mIDE <-- LS NOTIF $/progress[0m
+16:41:56.725281 OUT Elapsed: 0s
+16:41:56.725281 [92mIDE <-- LS NOTIF $/progress[0m
+16:41:56.725281 OUT Elapsed: 0s
+16:41:56.791112 IN Elapsed: 65.8305ms
+16:41:56.791112 [91mIDE     LS <-- Clangd NOTIF $/progress[0m
+16:41:56.791112 [91m                            $/progress: backgroundIndexProgress REPORT, 3/27, 11.0%[0m
+16:41:56.791112 IN Elapsed: 0s
+16:41:56.791112 [91mIDE     LS <-- Clangd NOTIF $/progress[0m
+16:41:56.791112 [91m                            $/progress: backgroundIndexProgress REPORT, 3/27, 11.0%[0m
+16:41:56.791112 [92mIDE <-- LS NOTIF $/progress[0m
+16:41:56.791112 OUT Elapsed: 0s
+16:41:56.791112 [92mIDE <-- LS NOTIF $/progress[0m
+16:41:56.791112 OUT Elapsed: 0s
+16:41:56.890387 IN Elapsed: 99.2753ms
+16:41:56.890927 [91mIDE     LS <-- Clangd NOTIF $/progress[0m
+16:41:56.890927 [91m                            $/progress: backgroundIndexProgress REPORT, 4/27, 14.0%[0m
+16:41:56.890927 IN Elapsed: 0s
+16:41:56.891430 [91mIDE     LS <-- Clangd NOTIF $/progress[0m
+16:41:56.892012 [92mIDE <-- LS NOTIF $/progress[0m
+16:41:56.892516 OUT Elapsed: 504.5µs
+16:41:56.893657 [91m                            $/progress: backgroundIndexProgress REPORT, 4/27, 14.0%[0m
+16:41:56.893657 [92mIDE <-- LS NOTIF $/progress[0m
+16:41:56.893657 OUT Elapsed: 0s
+16:41:56.990384 IN Elapsed: 96.7266ms
+16:41:56.990384 [91mIDE     LS <-- Clangd NOTIF $/progress[0m
+16:41:56.990384 [91m                            $/progress: backgroundIndexProgress REPORT, 5/27, 18.0%[0m
+16:41:56.990384 IN Elapsed: 0s
+16:41:56.990384 [91mIDE     LS <-- Clangd NOTIF $/progress[0m
+16:41:56.990384 [91m                            $/progress: backgroundIndexProgress REPORT, 5/27, 18.0%[0m
+16:41:56.990384 [92mIDE <-- LS NOTIF $/progress[0m
+16:41:56.990384 OUT Elapsed: 0s
+16:41:56.991267 [92mIDE <-- LS NOTIF $/progress[0m
+16:41:56.991954 OUT Elapsed: 0s
+16:41:56.997610 IN Elapsed: 7.2269ms
+16:41:56.997610 [91mIDE     LS <-- Clangd NOTIF $/progress[0m
+16:41:56.997610 [91m                            $/progress: backgroundIndexProgress REPORT, 6/27, 22.0%[0m
+16:41:56.997610 IN Elapsed: 0s
+16:41:56.998124 [91mIDE     LS <-- Clangd NOTIF $/progress[0m
+16:41:56.998124 [91m                            $/progress: backgroundIndexProgress REPORT, 6/27, 22.0%[0m
+16:41:56.998124 [92mIDE <-- LS NOTIF $/progress[0m
+16:41:56.998636 OUT Elapsed: 511.7µs
+16:41:56.998636 [92mIDE <-- LS NOTIF $/progress[0m
+16:41:56.999150 OUT Elapsed: 514.3µs
+16:41:57.056411 IN Elapsed: 57.7746ms
+16:41:57.056566 [91mIDE     LS <-- Clangd NOTIF $/progress[0m
+16:41:57.056566 [91m                            $/progress: backgroundIndexProgress REPORT, 7/27, 25.0%[0m
+16:41:57.056566 IN Elapsed: 0s
+16:41:57.056566 [91mIDE     LS <-- Clangd NOTIF $/progress[0m
+16:41:57.056566 [92mIDE <-- LS NOTIF $/progress[0m
+16:41:57.056566 OUT Elapsed: 0s
+16:41:57.056566 [91m                            $/progress: backgroundIndexProgress REPORT, 7/27, 25.0%[0m
+16:41:57.056566 [92mIDE <-- LS NOTIF $/progress[0m
+16:41:57.056566 OUT Elapsed: 0s
+16:41:57.070962 IN Elapsed: 14.3956ms
+16:41:57.070962 [91mIDE     LS <-- Clangd NOTIF $/progress[0m
+16:41:57.070962 [91m                            $/progress: backgroundIndexProgress REPORT, 8/27, 29.0%[0m
+16:41:57.070962 IN Elapsed: 0s
+16:41:57.070962 [91mIDE     LS <-- Clangd NOTIF $/progress[0m
+16:41:57.070962 [91m                            $/progress: backgroundIndexProgress REPORT, 8/27, 29.0%[0m
+16:41:57.070962 [92mIDE <-- LS NOTIF $/progress[0m
+16:41:57.070962 OUT Elapsed: 0s
+16:41:57.070962 [92mIDE <-- LS NOTIF $/progress[0m
+16:41:57.070962 OUT Elapsed: 0s
+16:41:57.088203 IN Elapsed: 17.2415ms
+16:41:57.088203 [91mIDE     LS <-- Clangd NOTIF $/progress[0m
+16:41:57.088203 [91m                            $/progress: backgroundIndexProgress REPORT, 9/27, 33.0%[0m
+16:41:57.088203 IN Elapsed: 0s
+16:41:57.088203 [91mIDE     LS <-- Clangd NOTIF $/progress[0m
+16:41:57.088203 [91m                            $/progress: backgroundIndexProgress REPORT, 9/27, 33.0%[0m
+16:41:57.088203 [92mIDE <-- LS NOTIF $/progress[0m
+16:41:57.088203 OUT Elapsed: 0s
+16:41:57.088203 [92mIDE <-- LS NOTIF $/progress[0m
+16:41:57.088717 OUT Elapsed: 513.9µs
+16:41:57.091075 IN Elapsed: 2.8717ms
+16:41:57.091075 [91mIDE     LS <-- Clangd NOTIF $/progress[0m
+16:41:57.091075 [91m                            $/progress: backgroundIndexProgress REPORT, 10/27, 37.0%[0m
+16:41:57.091578 IN Elapsed: 0s
+16:41:57.091578 [92mIDE <-- LS NOTIF $/progress[0m
+16:41:57.091644 [91mIDE     LS <-- Clangd NOTIF $/progress[0m
+16:41:57.091644 OUT Elapsed: 65.8µs
+16:41:57.091644 [91m                            $/progress: backgroundIndexProgress REPORT, 10/27, 37.0%[0m
+16:41:57.091644 [92mIDE <-- LS NOTIF $/progress[0m
+16:41:57.091644 OUT Elapsed: 0s
+16:41:57.096778 IN Elapsed: 5.1338ms
+16:41:57.096778 [91mIDE     LS <-- Clangd NOTIF $/progress[0m
+16:41:57.096778 [91m                            $/progress: backgroundIndexProgress REPORT, 11/27, 40.0%[0m
+16:41:57.097280 [92mIDE <-- LS NOTIF $/progress[0m
+16:41:57.097401 OUT Elapsed: 0s
+16:41:57.097401 IN Elapsed: 0s
+16:41:57.097401 [91mIDE     LS <-- Clangd NOTIF $/progress[0m
+16:41:57.097919 [91m                            $/progress: backgroundIndexProgress REPORT, 11/27, 40.0%[0m
+16:41:57.097919 [92mIDE <-- LS NOTIF $/progress[0m
+16:41:57.098949 OUT Elapsed: 516.3µs
+16:41:57.107141 IN Elapsed: 9.2225ms
+16:41:57.107173 [91mIDE     LS <-- Clangd NOTIF $/progress[0m
+16:41:57.107173 [91m                            $/progress: backgroundIndexProgress REPORT, 12/27, 44.0%[0m
+16:41:57.107173 IN Elapsed: 0s
+16:41:57.107173 [91mIDE     LS <-- Clangd NOTIF $/progress[0m
+16:41:57.107173 [91m                            $/progress: backgroundIndexProgress REPORT, 12/27, 44.0%[0m
+16:41:57.107173 [92mIDE <-- LS NOTIF $/progress[0m
+16:41:57.107173 OUT Elapsed: 0s
+16:41:57.107173 [92mIDE <-- LS NOTIF $/progress[0m
+16:41:57.107173 OUT Elapsed: 0s
+16:41:57.118202 IN Elapsed: 11.0293ms
+16:41:57.118202 [91mIDE     LS <-- Clangd NOTIF $/progress[0m
+16:41:57.118766 [91m                            $/progress: backgroundIndexProgress REPORT, 13/27, 48.0%[0m
+16:41:57.118766 IN Elapsed: 0s
+16:41:57.118766 [91mIDE     LS <-- Clangd NOTIF $/progress[0m
+16:41:57.118766 [91m                            $/progress: backgroundIndexProgress REPORT, 13/27, 48.0%[0m
+16:41:57.118766 [92mIDE <-- LS NOTIF $/progress[0m
+16:41:57.119282 OUT Elapsed: 516.5µs
+16:41:57.119282 [92mIDE <-- LS NOTIF $/progress[0m
+16:41:57.119282 OUT Elapsed: 0s
+16:41:57.169859 IN Elapsed: 50.5773ms
+16:41:57.169859 [91mIDE     LS <-- Clangd NOTIF $/progress[0m
+16:41:57.169859 [91m                            $/progress: backgroundIndexProgress REPORT, 14/27, 51.0%[0m
+16:41:57.169859 IN Elapsed: 0s
+16:41:57.169859 [91mIDE     LS <-- Clangd NOTIF $/progress[0m
+16:41:57.169859 [91m                            $/progress: backgroundIndexProgress REPORT, 14/27, 51.0%[0m
+16:41:57.169859 [92mIDE <-- LS NOTIF $/progress[0m
+16:41:57.169859 OUT Elapsed: 0s
+16:41:57.169859 [92mIDE <-- LS NOTIF $/progress[0m
+16:41:57.169859 OUT Elapsed: 0s
+16:41:57.174519 IN Elapsed: 4.6591ms
+16:41:57.174519 [91mIDE     LS <-- Clangd NOTIF $/progress[0m
+16:41:57.174519 [91m                            $/progress: backgroundIndexProgress REPORT, 15/27, 55.0%[0m
+16:41:57.174519 IN Elapsed: 0s
+16:41:57.174519 [91mIDE     LS <-- Clangd NOTIF $/progress[0m
+16:41:57.174519 [92mIDE <-- LS NOTIF $/progress[0m
+16:41:57.174519 OUT Elapsed: 0s
+16:41:57.174519 [91m                            $/progress: backgroundIndexProgress REPORT, 15/27, 55.0%[0m
+16:41:57.174519 [92mIDE <-- LS NOTIF $/progress[0m
+16:41:57.174519 OUT Elapsed: 0s
+16:41:57.183404 IN Elapsed: 8.8858ms
+16:41:57.183404 [91mIDE     LS <-- Clangd NOTIF $/progress[0m
+16:41:57.183916 [91m                            $/progress: backgroundIndexProgress REPORT, 16/27, 59.0%[0m
+16:41:57.183916 IN Elapsed: 0s
+16:41:57.183916 [91mIDE     LS <-- Clangd NOTIF $/progress[0m
+16:41:57.183916 [92mIDE <-- LS NOTIF $/progress[0m
+16:41:57.183916 OUT Elapsed: 0s
+16:41:57.183916 [91m                            $/progress: backgroundIndexProgress REPORT, 16/27, 59.0%[0m
+16:41:57.183916 [92mIDE <-- LS NOTIF $/progress[0m
+16:41:57.183916 OUT Elapsed: 0s
+16:41:57.193387 IN Elapsed: 9.4709ms
+16:41:57.193898 [91mIDE     LS <-- Clangd NOTIF $/progress[0m
+16:41:57.193898 [91m                            $/progress: backgroundIndexProgress REPORT, 17/27, 62.0%[0m
+16:41:57.193898 IN Elapsed: 0s
+16:41:57.193898 [91mIDE     LS <-- Clangd NOTIF $/progress[0m
+16:41:57.193898 [91m                            $/progress: backgroundIndexProgress REPORT, 17/27, 62.0%[0m
+16:41:57.193898 [92mIDE <-- LS NOTIF $/progress[0m
+16:41:57.193898 OUT Elapsed: 0s
+16:41:57.193898 [92mIDE <-- LS NOTIF $/progress[0m
+16:41:57.193898 OUT Elapsed: 0s
+16:41:57.196462 IN Elapsed: 2.5639ms
+16:41:57.196462 [91mIDE     LS <-- Clangd NOTIF $/progress[0m
+16:41:57.196462 [91m                            $/progress: backgroundIndexProgress REPORT, 18/27, 66.0%[0m
+16:41:57.196462 IN Elapsed: 0s
+16:41:57.196462 [92mIDE <-- LS NOTIF $/progress[0m
+16:41:57.197005 OUT Elapsed: 0s
+16:41:57.196964 [91mIDE     LS <-- Clangd NOTIF $/progress[0m
+16:41:57.197005 [91m                            $/progress: backgroundIndexProgress REPORT, 18/27, 66.0%[0m
+16:41:57.197005 [92mIDE <-- LS NOTIF $/progress[0m
+16:41:57.197005 OUT Elapsed: 0s
+16:41:57.231240 IN Elapsed: 34.2351ms
+16:41:57.231240 [91mIDE     LS <-- Clangd NOTIF $/progress[0m
+16:41:57.231240 [91m                            $/progress: backgroundIndexProgress REPORT, 19/27, 70.0%[0m
+16:41:57.231240 IN Elapsed: 0s
+16:41:57.231240 [91mIDE     LS <-- Clangd NOTIF $/progress[0m
+16:41:57.231240 [92mIDE <-- LS NOTIF $/progress[0m
+16:41:57.231240 OUT Elapsed: 0s
+16:41:57.231240 [91m                            $/progress: backgroundIndexProgress REPORT, 19/27, 70.0%[0m
+16:41:57.231240 [92mIDE <-- LS NOTIF $/progress[0m
+16:41:57.231240 OUT Elapsed: 0s
+16:41:57.251325 IN Elapsed: 20.0851ms
+16:41:57.251325 [91mIDE     LS <-- Clangd NOTIF $/progress[0m
+16:41:57.253087 [91m                            $/progress: backgroundIndexProgress REPORT, 20/27, 74.0%[0m
+16:41:57.253087 IN Elapsed: 0s
+16:41:57.253087 [91mIDE     LS <-- Clangd NOTIF $/progress[0m
+16:41:57.253087 [91m                            $/progress: backgroundIndexProgress REPORT, 20/27, 74.0%[0m
+16:41:57.253087 [92mIDE <-- LS NOTIF $/progress[0m
+16:41:57.253087 OUT Elapsed: 0s
+16:41:57.253087 [92mIDE <-- LS NOTIF $/progress[0m
+16:41:57.253087 OUT Elapsed: 0s
+16:41:57.265415 IN Elapsed: 12.3277ms
+16:41:57.265415 [91mIDE     LS <-- Clangd NOTIF $/progress[0m
+16:41:57.265415 [91m                            $/progress: backgroundIndexProgress REPORT, 21/27, 77.0%[0m
+16:41:57.265415 IN Elapsed: 0s
+16:41:57.265415 [91mIDE     LS <-- Clangd NOTIF $/progress[0m
+16:41:57.265415 [91m                            $/progress: backgroundIndexProgress REPORT, 21/27, 77.0%[0m
+16:41:57.265415 [92mIDE <-- LS NOTIF $/progress[0m
+16:41:57.265415 OUT Elapsed: 0s
+16:41:57.265415 [92mIDE <-- LS NOTIF $/progress[0m
+16:41:57.265415 OUT Elapsed: 0s
+16:41:57.270562 IN Elapsed: 5.1475ms
+16:41:57.270562 [91mIDE     LS <-- Clangd NOTIF $/progress[0m
+16:41:57.271074 [91m                            $/progress: backgroundIndexProgress REPORT, 22/27, 81.0%[0m
+16:41:57.271074 [92mIDE <-- LS NOTIF $/progress[0m
+16:41:57.271074 OUT Elapsed: 0s
+16:41:57.275755 IN Elapsed: 4.6814ms
+16:41:57.275755 [91mIDE     LS <-- Clangd NOTIF $/progress[0m
+16:41:57.275755 [91m                            $/progress: backgroundIndexProgress REPORT, 23/27, 85.0%[0m
+16:41:57.275755 [92mIDE <-- LS NOTIF $/progress[0m
+16:41:57.275755 OUT Elapsed: 0s
+16:41:57.279058 IN Elapsed: 3.3024ms
+16:41:57.279058 [91mIDE     LS <-- Clangd NOTIF $/progress[0m
+16:41:57.279058 [91m                            $/progress: backgroundIndexProgress REPORT, 24/27, 88.0%[0m
+16:41:57.279058 [92mIDE <-- LS NOTIF $/progress[0m
+16:41:57.279058 OUT Elapsed: 0s
+16:41:57.307553 IN Elapsed: 28.4957ms
+16:41:57.307553 [91mIDE     LS <-- Clangd NOTIF $/progress[0m
+16:41:57.307553 [91m                            $/progress: backgroundIndexProgress REPORT, 25/27, 92.0%[0m
+16:41:57.307553 [92mIDE <-- LS NOTIF $/progress[0m
+16:41:57.307553 OUT Elapsed: 0s
+16:41:57.318440 IN Elapsed: 10.8864ms
+16:41:57.318440 [91mIDE     LS <-- Clangd NOTIF $/progress[0m
+16:41:57.318440 [91m                            $/progress: backgroundIndexProgress REPORT, 26/27, 96.0%[0m
+16:41:57.318440 [92mIDE <-- LS NOTIF $/progress[0m
+16:41:57.318440 OUT Elapsed: 0s
+16:41:57.355454 IN Elapsed: 37.0143ms
+16:41:57.355454 [91mIDE     LS <-- Clangd NOTIF $/progress[0m
+16:41:57.355454 [91m                            $/progress: backgroundIndexProgress END [0m
+16:41:57.355454 [92mIDE <-- LS NOTIF $/progress[0m
+16:41:57.355454 OUT Elapsed: 0s
+16:42:00.565508 IN Elapsed: 4.1449736s
+16:42:00.565508 [92mIDE --> LS REQU shutdown 5[0m
+16:42:00.565508 [91mIDE     LS --> Clangd REQU shutdown 6[0m
+16:42:00.565508 OUT Elapsed: 0s
+16:42:00.566263 IN Elapsed: 3.2108085s
+16:42:00.566263 [31mIDE     LS <-- Clangd RESP shutdown 6[0m
+16:42:00.566768 [32mIDE <-- LS RESP shutdown 5[0m
+16:42:00.566768 OUT Elapsed: 0s
+16:42:00.567336 IN Elapsed: 0s
+16:42:00.567336 [92mIDE --> LS NOTIF exit[0m
+16:42:00.567336 [91mIDE     LS --> Clangd NOTIF exit[0m
+16:42:00.567913 OUT Elapsed: 576.7µs
+16:42:00.567913 [92m                 exit: Arduino Language Server is shutting down.[0m
