@@ -3,6 +3,7 @@
 #include "esp_camera.h"
 #include <ArduinoJson.h>
 #include "HardwareSerial.h"
+#include <Preferences.h>
 
 // ===== UART para o Uno via GPIO12/13 =====
 HardwareSerial UnoSerial(2);
@@ -30,19 +31,21 @@ static const int TX_PIN = 13;
 #define HREF_GPIO_NUM     23
 #define PCLK_GPIO_NUM     22
 
-// ===== Wi-Fi e servidor =====
-const char* ssid     = "InternetSA";
-const char* password = "cadebabaca";
-const String server  = "http://sophia.mirako.org/pandora/";
+
 
 // ===== Temporização =====
 unsigned long lastAction    = 0;
-const unsigned long interval = 5000; // 5s
+const unsigned long interval = 2000; // 5s
 
 // ===== Estados lidos da Serial do UNO =====
-float  lastDistance  = -1.0;  // última leitura válida
+float  dist1  = -1.0;  // última leitura válida
+float  dist2  = -1.0;  // última leitura válida
+float  dist3  = -1.0;  // última leitura válida
+float  dist4  = -1.0;  // última leitura válida
 String pendingAlert  = "";    // "TIMEOUT" ou "SAFETY"
 bool   stopSent      = false; // para só enviar uma vez o stop ao servidor
+
+String formattedDateTime;
 
 // ===== Protótipos =====
 void cameraStreamTask(void*);
@@ -62,13 +65,8 @@ void setup() {
   pinMode(FLASH_GPIO_NUM, OUTPUT);
   digitalWrite(FLASH_GPIO_NUM, LOW);
 
-  // Conecta Wi-Fi
-  WiFi.begin(ssid, password);
-  while (WiFi.status() != WL_CONNECTED) {
-    delay(500);
-    Serial.print(".");
-  }
-  Serial.println("\nWi-Fi OK");
+  setupWEB();
+  setupTIME();
 
   // Configura câmera
   camera_config_t cfg;
@@ -103,161 +101,28 @@ void setup() {
   }
   esp_camera_init(&cfg);
 
-  // Tarefa de streaming contínuo
-  xTaskCreatePinnedToCore(
-    cameraStreamTask,
-    "camTask",
-    15 * 1024,
-    nullptr,
-    1,
-    &cameraTaskHandle,
-    1
-  );
+
+
+
+
+   setupTELE();
+ 
+
+
 }
 
 void loop() {
   // 1) Parseia tudo da UART2 do UNO
   parseUnoSerial();
-
+  loopWEB();
+  loopTIME();
+  
   // 2) A cada 5s, envia dados
   if (millis() - lastAction >= interval) {
     lastAction = millis();
-    sendCameraImage();
-    sendSensorData();
-    checkCommand();
+    parseUnoSerial();
+    loopWEB();
+    loopTIME();
+
   }
-}
-
-// === TASK de streaming MJPEG (1 fps) ===
-void cameraStreamTask(void *parameter) {
-  for (;;) {
-    camera_fb_t *fb = esp_camera_fb_get();
-    if (fb) {
-      HTTPClient http;
-      http.begin(server + "upload.php");
-      http.addHeader("Content-Type", "image/jpeg");
-      http.POST(fb->buf, fb->len);
-      http.end();
-      esp_camera_fb_return(fb);
-    }
-    vTaskDelay(pdMS_TO_TICKS(1000));
-  }
-}
-
-// === Envia snapshot JPEG único via POST ===
-void sendCameraImage() {
-  camera_fb_t *fb = esp_camera_fb_get();
-  if (!fb) return;
-  HTTPClient http;
-  http.begin(server + "upload.php");
-  http.addHeader("Content-Type", "image/jpeg");
-  http.POST(fb->buf, fb->len);
-  http.end();
-  esp_camera_fb_return(fb);
-}
-
-// === POST JSON com distancia + alert (se houver) ===
-void sendSensorData() {
-  StaticJsonDocument<256> doc;
-  if (lastDistance >= 0) doc["distancia"] = lastDistance;
-  else                   doc["distancia"] = nullptr;
-  doc["timestamp"] = millis();
-
-  if (pendingAlert != "") {
-    doc["alert"] = pendingAlert;
-    if (!stopSent) {
-      sendStopToServer();
-      stopSent = true;
-    }
-  }
-
-  String payload;
-  serializeJson(doc, payload);
-
-  HTTPClient http;
-  http.begin(server + "sensor.php");
-  http.addHeader("Content-Type", "application/json");
-  http.POST(payload);
-  http.end();
-
-  pendingAlert = "";  // limpa para o próximo ciclo
-}
-
-// === GET comando.php e repassa ao UNO ===
-void checkCommand() {
-  HTTPClient http;
-  http.begin(server + "comando.php");
-  int code = http.GET();
-  if (code == 200) {
-    String cmd = http.getString();
-    cmd.trim();
-    executarComando(cmd);
-  }
-  http.end();
-        sendStopToServer();
-
-}
-
-// === Mapeia texto de comando para UART2 / flash ===
-void executarComando(const String &cmdIn) {
-  String cmd = cmdIn;
-  if (cmd.equalsIgnoreCase("flash_on")) {
-    digitalWrite(FLASH_GPIO_NUM, HIGH);
-    return;
-  }
-  if (cmd.equalsIgnoreCase("flash_off")) {
-    digitalWrite(FLASH_GPIO_NUM, LOW);
-    return;
-  }
-  if (cmd.startsWith("A")) {
-    UnoSerial.println(cmd);
-    return;
-  }
-
-  char c = cmd.charAt(0);
-  switch (c) {
-    case 'f': UnoSerial.write('f'); break;
-    case 'b': UnoSerial.write('b'); break;
-    case 'c': UnoSerial.write('c'); break;
-    case 'w': UnoSerial.write('w'); break;
-    case 's': UnoSerial.write('s'); break;
-    case 'L': UnoSerial.write('L'); break;
-    case 'R': UnoSerial.write('R'); break;
-    default: return;
-  }
-  if (c != 's') stopSent = false;  // permite reenviar alertas
-}
-
-// === Parse genérico da UART2 do UNO para DIST / TIMEOUT / SAFETY ===
-void parseUnoSerial() {
-  while (UnoSerial.available()) {
-    String line = UnoSerial.readStringUntil('\n');
-    line.trim();
-Serial.println("SERIAL RECBIDO ");
-Serial.println(line);
-    // DIST:
-    int p = line.indexOf("DIST:");
-    if (p >= 0) {
-      int cm = line.indexOf("cm", p);
-      String num = line.substring(p + 5,
-                                 cm > p + 5 ? cm : line.length());
-      lastDistance = num.toFloat();
-    }
-    // TIMEOUT
-    if (line.indexOf("TIMEOUT") >= 0) {
-      pendingAlert = "TIMEOUT";
-    }
-    // SAFETY
-    if (line.indexOf("SAFETY") >= 0) {
-      pendingAlert = "SAFETY";
-    }
-  }
-}
-
-// === Envia GET comando.php?cmd=stop para limpar o comando no servidor ===
-void sendStopToServer() {
-  HTTPClient http;
-  http.begin(server + "comando.php?cmd=stop");
-  http.GET();
-  http.end();
 }
